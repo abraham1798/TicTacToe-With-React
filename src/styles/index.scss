@@ -11,3 +11,106 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+.main-title{
+    text-align: center;
+}
+.main{
+    width: 50%;
+    height: 220px;
+    border: solid 7px rgb(0, 242, 250);
+    margin: 10% auto;
+    text-align: center;
+}
+.buttons{
+    margin-top: 7%;
+
+    a{
+        background-color: green;
+        margin-right: 2%;
+        border-radius: 25px;
+        padding: 30px;
+        border: solid 10px white;
+    }
+.form {
+    text-align: center;
+}
+}
+.parent{
+    width: 50%;
+    margin: 10% auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    .child{
+        line-height: -20px;
+        text-align: center;
+        font-size: 2.5em;
+        height: 150px;
+        width: 33%;
+        border: solid 3px white;
+    }
+
+}
+ol, ul {
+  padding-left: 30px;
+}
+.game-board{
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 35%;
+
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgba(0, 0, 0, 0.993);
+  border: 2px solid rgb(0, 242, 250);
+  float: left;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 150px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 150px;
+  color: rgb(255, 255, 255);
+}
+.square:hover{
+    background-color: rgb(0, 236, 71);
+}
+.square:first-child, .square:nth-child(3), .square:nth-child(2){
+    border-top: none;
+}
+.square:first-child, .square:nth-child(4), .square:nth-child(7){
+    border-left: none;
+}
+.square:nth-child(3), .square:nth-child(6), .square:nth-child(9){
+    border-right: none;
+}
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9){
+    border-bottom: none;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
